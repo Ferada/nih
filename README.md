@@ -26,7 +26,7 @@ Each time you run deploy a new timestamped directory will be created in `/usr/sh
 
 To rollback just `rm -r /usr/share/nih/current`, and rename `previous` to `current`. 
 
-This will rollback the application, as well as the Apache site configuration, but it will not rollback the database. You can do this separtely by running
+This will rollback the application, as well as the Apache site configuration, but it will not rollback the database. You can do this separately by running
 
 `mysql jukebox < /usr/share/nih/previous/db-backup.sql`
 

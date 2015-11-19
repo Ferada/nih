@@ -8,7 +8,7 @@ if [ ! -d "ENV" ]; then
 	python virtualenv-bootstrap.py ENV
 fi
 
-source "$(pwd)/ENV/bin/activate"
+. "$(pwd)/ENV/bin/activate"
 python scripts/setupdb.py
 echo ""
 echo "Bootstrapped successfully"

@@ -49,7 +49,7 @@ def setup_db(username = None, password = None, hostname = None):
         args = ['mysql', '-u', username, '-f', '-e', sql]
         if password == None:
             print "Now you will be prompted for the password that goes with that mysql account"
-            args += "-p"
+            args.append("-p")
         else:
             args.append("--password=%s"%password)
         if hostname != None:
